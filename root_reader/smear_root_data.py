@@ -59,9 +59,9 @@ def smear_root(root_file_path, sig_thit_time=None, sig_thit_pos=None, scanner_le
     new_tree = tree.CloneTree(0)
 
     if TOF_FLAG:
-        time1 = array('f',[0])
+        time1 = array('d',[0])
         tree.SetBranchAddress('time1', time1)
-        time2 = array('f',[0])
+        time2 = array('d',[0])
         tree.SetBranchAddress('time2', time2)
     if POS_FLAG:
         globalPosZ1 = array('f',[0])
