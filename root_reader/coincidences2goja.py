@@ -1,7 +1,5 @@
 '''
-Created on 10 Jun 2019
-
-@author: jawka
+@author: pkopka
 '''
 
 import ROOT
