@@ -42,10 +42,6 @@ def set_crystal_id(pos_z, scanner_length, number_of_volume):
     return int(((pos_z + scanner_length/2.0)/(scanner_length/float(number_of_volume)))%number_of_volume)
 
 
-def remove_old_branch(tree, brach_name):
-    tree.GetListOfBranches().Remove(tree.GetBranch(brach_name))
-    # tree.Write()
-
 
 def smear_root(root_file_path, sig_thit_time=None, sig_thit_pos=None, scanner_length= None, number_of_volume= None):
     f = ROOT.TFile.Open(root_file_path)
